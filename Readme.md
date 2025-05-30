@@ -71,7 +71,7 @@ The aim of this project is to reverse-engineer FICO credit scores and predict in
 * Joint learning is efficient with highly correlated targets.
 * XGBoost can learn **non-linear interactions** that linear models are not able to learn.
 
-### ???? What to do next:
+###  What to do next:
 
 1. **Feature Engineering**:
 
