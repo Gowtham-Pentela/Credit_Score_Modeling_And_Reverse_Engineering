@@ -23,22 +23,22 @@ Previous efforts with multi-output regressors provided modest gain for both targ
 
 ### Input Features:
 
-* credit\\\\_utilization
-* credit\\\\_history\\\\_years
-* total\\\\_delinquency
-* recent\\\\_inquiries
-* credit\\\\_mix
-* log\\\\_total\\\\_balance
+* credit_utilization
+* credit_history_years
+* total_delinquency
+* recent_inquiries
+* credit_mix
+* log_total_balance
 
 ### XGBoost Hyperparameters:
 
-* n\\\\_estimators: 200
-* max\\\\_depth: 3
-* learning\\\\_rate: 0.1
+* n_estimators: 200
+* max_depth: 3
+* learning_rate: 0.1
 * subsample: 1.0
-* colsample\\\\_bytree: 1.0
-* reg\\\\_lambda: 2
-* reg\\\\_alpha: 0.5
+* colsample_bytree: 1.0
+* reg_lambda: 2
+* reg_alpha: 0.5
 * gamma: 1
 
 ### Performance:
@@ -56,22 +56,22 @@ The model explains over half of the variance in FICO scores and reduces error by
 
 ### Input Features:
 
-* credit\_utilization
-* credit\_history\_years
-* total\_delinquency
-* recent\_inquiries
-* credit\_mix
-* log\_total\_balance
+* credit_utilization
+* credit_history_years
+* total_delinquency
+* recent_inquiries
+* credit_mix
+* log_total_balance
 
 ### XGBoost Hyperparameters:
 
-* n\_estimators: 150
-* max\_depth: 4
-* learning\_rate: 0.05
+* n_estimators: 150
+* max_depth: 4
+* learning_rate: 0.05
 * subsample: 1.0
-* colsample\_bytree: 1.0
-* reg\_lambda: 1
-* reg\_alpha: 0.3
+* colsample_bytree: 1.0
+* reg_lambda: 1
+* reg_alpha: 0.3
 * gamma: 0.5
 
 ### Performance:
@@ -89,8 +89,8 @@ Though prediction error is low (MAE ~3.4%), explanatory power is still poor. The
 
 | Metric               | Previous Best | XGBoost (FICO) | XGBoost (Interest Rate) |
 | -------------------- | ------------- | -------------- | ----------------------- |
-| MAE (fico\_score)    | 17.64         | 17.71          | -                       |
-| R² (fico\_score)     | 0.526         | 0.522          | -                       |
+| MAE (fico_score)    | 17.64         | 17.71          | -                       |
+| R² (fico_score)     | 0.526         | 0.522          | -                       |
 | MAE (interest_rate) | 0.0342        | -              | 0.0344                  |
 | R² (interestrates) | 0.1665        | -              | 0.1616                  |
 
